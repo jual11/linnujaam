@@ -1,0 +1,19 @@
+/**
+ * Creates sticky footer layout
+ * 
+ * Version: 1.1
+ * Mod: Yes
+ */
+
+ .cc-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #F4F4F4;
+}
+
+.cc-body__main,
+.cc-body .page-content {
+    flex-grow: 1; /* Fills screen, pushes footer (or makes it sticky if content area is short) */
+}
+

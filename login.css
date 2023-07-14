@@ -1,0 +1,53 @@
+body {
+	background: #fafafa;
+}
+
+.login h1 a {
+	background-size: 150px;
+	width: 260px;
+	height: 100px;
+	background-position: center;
+}
+
+.login form {
+	border-radius: 6px;
+}
+
+.login .button-primary,
+.login .button-primary:visited,
+.login .button-primary:hover, 
+.login .button-primary:active,
+.login .button-primary:focus  {
+    background: #0f77bd;
+    border-color: #0872ba;
+    color: #fff;
+    transition: .3s opacity;
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 2px!important;
+}
+
+@media (min-width: 783px) {
+	.login .button-primary,
+	.login .button-primary:visited,
+	.login .button-primary:hover, 
+	.login .button-primary:active,
+	.login .button-primary:focus  {
+		padding: 5.5px!important;
+	}
+}
+
+.login .button-primary:hover  {
+    opacity: 0.85;
+}
+
+.login form .forgetmenot {
+    display: none;
+}
+
+.login #backtoblog {
+	display: none;
+}

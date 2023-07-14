@@ -1,0 +1,307 @@
+.site-nav {
+    padding: 12px 0;
+    background: #FFFFFF;
+    border-bottom: 1px solid #ccc;
+}
+
+.woocommerce-checkout .site-nav {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.site-nav__inner {
+    padding: 0px 20px;
+    margin: auto;
+}
+
+.site-nav__mob {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.site-nav__desc {
+    display: none;
+}
+
+.site-nav__icons {
+    display: flex;
+}
+
+.site-nav__burger {  
+    width: 25px;  
+    display: inline-block;
+    cursor: pointer;
+}
+
+.site-nav__burger span {
+    background-color: #5C5C5C;
+    width: 100%;
+    height: 2px;
+    display: block;
+    margin: 5px 0;
+}
+
+.site-nav__logo {
+    flex-basis: 221px;
+}
+
+.site-nav__logo-link,
+.site-nav__logo-link:visited {
+    display: inline-block;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.site-nav__logo img {
+    width: 50%;
+}
+
+.site-nav__heading { 
+    display: block;
+    width: 100px;
+}
+
+.site-nav__search {
+    flex-basis: 100%;
+    margin-top: 10px;
+    flex-grow: 1;
+}
+
+.site-nav__search .dgwt-wcas-search-wrapp {
+    max-width: 100%;
+}
+
+.site-nav__search .dgwt-wcas-sf-wrapp input[type=search].dgwt-wcas-search-input {
+    font-size: 16px;
+}
+
+.site-nav__log-in, 
+.site-nav__log-in:visited {
+    text-decoration: none;
+    font-size: 15px;
+    color: #555555;
+    border: 1px solid #707070;
+    padding: 6px 15px;
+    border-radius: 3px;
+    /* display: none; */
+    text-align: center;
+}
+
+.site-nav__log-in:hover,
+.site-nav__log-in:focus,
+.site-nav__log-in:active {
+    background-color: rgb(245, 245, 245);
+}
+
+.site-nav__menu {
+    display: none;
+}
+
+.menu-item-has-children {
+	position: relative;
+}
+
+/*
+Used this for svg encoding: https://yoksel.github.io/url-encoder/
+*/
+.menu-item-has-children > a::after {
+	content: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' focusable='false' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 448 448' style='enable-background:new 0 0 448 448;' xml:space='preserve' fill='%23002147'%3E%3Cpath d='M207,349.5L12.7,155.1c-9.4-9.4-9.4-24.6,0-33.9l12.7-12.7c9.4-9.4,24.5-9.4,33.9,0l164.7,164l164.7-164 c9.4-9.3,24.5-9.3,33.9,0l12.7,12.7c9.4,9.4,9.4,24.6,0,33.9L241,349.5C231.6,358.8,216.4,358.8,207,349.5L207,349.5z'/%3E%3C/svg%3E");
+	margin-left: 0.35em;
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+    position: relative;
+    top: -1px;
+}
+
+.site-nav .sub-menu {
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	text-align: left;
+	box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 30%);
+	z-index: 20;
+	padding: 10px 20px!important;
+	border-radius: 2px;
+	margin-top: 5px;
+	left: 0;
+	top: 27px;
+	width: max-content;
+}
+
+.site-nav .sub-menu-active {
+    display: inline-block;
+}
+
+.site-nav .sub-menu li {
+	padding: 4px 0;
+	margin: 0;
+	display: block;
+}
+
+.site-nav .sub-menu a,
+.site-nav .sub-menu a:visited {
+	font-weight: normal;
+	font-size: 0.95em;
+	padding: 2px 0;
+	line-height: 1.3;
+}
+
+.page-template-require-password-update .site-nav__menu {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .site-nav__logo {
+        flex-basis: 250px;
+    }   
+}
+
+@media (min-width: 1024px) {
+    .site-nav {
+        padding: 18px 0px;
+    }
+
+    .site-nav__inner {
+        padding: 0px 21px 0px 13px;
+    }
+
+    .site-nav__mob {
+        display: none;
+    }
+
+    .site-nav__desc {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .site-nav__logo {
+        flex-basis: 31%;
+        margin-right: 20px;
+    }
+
+    .site-nav__nav-bar {
+        display: flex;
+        align-items: center;
+    }
+
+    .site-nav__nav-bar-left {
+        border-right: 1px solid #DDDDDD;
+        display: flex;
+        align-items: center;
+    }
+
+    .site-nav__menu {
+        display: flex;
+        padding: 9px 0;
+        border-right: 1px solid #ddd;
+        padding-right: 11px;
+    }
+
+    .site-nav__menu ul {      
+        list-style-type: none;
+    }
+
+    .site-nav__menu li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .site-nav__menu a,
+    .site-nav__menu a:visited {
+        text-decoration: none;
+        font-size: 14px;
+        color: #555555;
+    }
+
+    .site-nav__menu a:hover {
+        color: #005891;
+    }
+    
+    .site-nav__search {
+        margin: 0;
+        margin-right: 48px;
+        flex-basis: auto;
+    }
+
+    .site-nav__search .dgwt-wcas-sf-wrapp input[type=search].dgwt-wcas-search-input {
+        border: 1px solid #B0B0B0;
+    }
+
+    .site-nav__current-user--mob {
+        display: none;
+    }
+
+    .site-nav__current-user {
+        margin-left: 30px;
+        text-align: right;
+        background-color: transparent;
+        color: inherit;
+        flex-basis: auto;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .site-nav__current-user-name {
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .site-nav__current-user-email {
+        font-size: 13px;
+        display: block;
+    }
+    
+    .site-nav__log-in, 
+    .site-nav__log-in:visited {
+        display: block;
+        margin-left: 20px;
+        color: black;
+    }
+
+    .hide-1024 {
+        display: none!important;
+    }
+}
+
+@media (min-width: 1200px)  {
+    .site-nav__menu li {
+    margin-right: 30px;
+    }
+
+    .site-nav__menu a,
+    .site-nav__menu a:visited {
+        font-size: 16px;
+    }
+
+    .site-nav__current-user {
+    margin-left: 43px;
+    }
+}
+
+@media (min-width: 1400px)  {
+    .site-nav__menu li {
+        margin-right: 33px;
+    }
+
+    .site-nav__menu a,
+    .site-nav__menu a:visited {
+        font-size: 17px;
+    }
+
+    .site-nav__current-user-name {
+        font-size: 16px;
+    }
+
+    .site-nav__log-in, 
+    .site-nav__log-in:visited {
+        font-size: 17px;
+        margin-left: 33px;
+    }
+}

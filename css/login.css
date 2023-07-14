@@ -1,0 +1,52 @@
+body {
+	background: #EEF6FE;
+}
+
+.login h1 a {
+	background-image: url('../img/diotech-lux-logo.png');
+	background-size: 230px;
+	width: 260px;
+	height: 150px;
+	background-position: center;
+}
+
+.login form {
+	border-radius: 0;
+}
+
+.login .button-primary,
+.login .button-primary:visited,
+.login .button-primary:hover, 
+.login .button-primary:active,
+.login .button-primary:focus  {
+    background: #002147;
+    border-color: #002147;
+    color: #fff;
+    transition: .3s opacity;
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    padding: 2px!important;
+}
+
+@media (min-width: 783px) {
+	.login .button-primary,
+	.login .button-primary:visited,
+	.login .button-primary:hover, 
+	.login .button-primary:active,
+	.login .button-primary:focus  {
+		padding: 5.5px!important;
+	}
+}
+
+.login .button-primary:hover  {
+    opacity: 0.85;
+}
+
+.login form .forgetmenot {
+    display: none;
+}
+
+.login #backtoblog {
+	display: none;
+}

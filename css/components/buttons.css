@@ -1,0 +1,67 @@
+button {
+    font-family: inherit;
+    font-weight: 300;
+}
+
+.btn,
+.btn:visited {
+    background: none;
+    border: 1px solid;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15.5px;
+    line-height: 1.2;
+    padding: 0.9em 1em;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s opacity;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: inherit;
+    text-align: center;
+    background: #0070b8;
+    text-transform: uppercase;
+    color: white;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+	color: #fff;
+	opacity: 0.85;
+}
+
+
+@media (min-width: 768px) {
+
+}
+
+
+/* Btn-close */
+.btn-close {
+	background: none;
+	color: #004185;
+	border: 0 none;
+	font-family: 'Times New Roman', serif;
+	padding: 5px 6px;
+	line-height: 29px;
+	font-size: 59px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: center;
+	cursor: pointer;
+	transition: 0.3s opacity;
+}
+
+.btn-close:focus {
+	outline: 0 none;
+	color: #68707a;
+}
+
+@media (min-width: 600px) {
+	.btn-close:hover {
+		opacity: 0.9;
+	}
+}

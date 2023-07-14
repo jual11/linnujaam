@@ -1,0 +1,60 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.47;
+    background-color: #ffffff;
+    font-size: 14px;
+}
+
+a, 
+a:visited {
+	color: #007cba;
+}
+
+a:hover, 
+a:active, 
+a:focus {
+	color: #1170AD;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.25;
+    font-family: 'Rubik', sans-serif;
+}
+
+pre {
+	font-size: 12.5px;
+}
+
+/* body */
+
+body.page-template-inquiry-thankyou,
+body.error404 {
+	background: #f9f9f9;
+}
+
+@media (min-width: 600px) {
+	body {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 1600px) {
+	body {
+		font-size: 15px;
+	}
+}
+
+@media (min-width: 1900px) {
+	body {
+		font-size: 16px;
+	}
+}
+

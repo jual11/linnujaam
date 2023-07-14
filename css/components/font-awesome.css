@@ -1,0 +1,19 @@
+.chevron-right--size {
+    font-size: 17px;
+    vertical-align: top;
+    padding: 9px;
+}
+
+.chevron-left--size {
+    font-size: smaller;
+    vertical-align: baseline;
+}
+
+.footer-external-link {
+    font-size: 12px;
+    margin-left: 3px;
+}
+
+.page-header--single-product .chevron-left--size {
+    margin-right: 10px;
+}

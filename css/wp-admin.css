@@ -1,0 +1,5 @@
+/* Hides featured image div. Those will be set automatically (usign save_post action) */
+.post-type-reference #postimagediv,
+.post-type-product_page #postimagediv {
+    display: none;
+}

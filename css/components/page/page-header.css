@@ -1,0 +1,42 @@
+.page-header {
+    margin-bottom: 30px;
+}
+
+.page-header__inner {
+
+}
+
+.page-header__heading {
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+}
+
+@media (min-width: 600px) {
+    .page-header {
+
+    }
+
+    .page-header__heading {
+
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .page-header {
+
+    }
+
+    .page-header__heading {
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .page-header__heading {
+
+    }
+}
+
+

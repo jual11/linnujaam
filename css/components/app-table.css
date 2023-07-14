@@ -1,0 +1,28 @@
+.app-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+    background: #fff;
+}
+
+.app-table td,
+.app-table th {
+    border: 1px solid #ccc;
+    padding: 5px 7px;
+    text-align: left;
+	color: #000;
+	line-height: 1.5
+}
+
+.app-table th {
+    background: #fafafa;
+    width: 150px;
+}
+
+.app-table tr:hover {
+    background: #ffffef;
+}
+
+.app-table__item-heading {
+    font-weight: 600;
+}
