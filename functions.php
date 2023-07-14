@@ -66,6 +66,8 @@ add_action( 'after_setup_theme', 'cc_setup' );
 // Add custom image size
 add_image_size( 'reference-cover', 1900, 1900 ); 
 
+ini_set('memory_limit', '1024M');
+
 /**
  * 3.
  * Include other functions below.

@@ -2,6 +2,7 @@
 /**
  * Template Name: Add new user
  */
+
 get_header();
 
 
@@ -13,10 +14,6 @@ get_header();
 	
 	</div><!--page-content__inner-->
 </div><!-- page-content -->
-
-
-
-
 
 
 <?php get_footer(); ?>

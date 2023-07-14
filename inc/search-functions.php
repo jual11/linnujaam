@@ -30,6 +30,9 @@ function cc_ring_code_letters_select() {
  * Search form validation
  */
 function cc_search_from_validation() {
+    // Unset the search results session variable when it's no longer needed
+    // unset($_SESSION['search_results']);
+
     // Is POST
     if ( $_SERVER["REQUEST_METHOD"] == "POST" ) {
 
@@ -66,14 +69,13 @@ function cc_get_search_results() {
         }
 
         // Check that ring_code_letters has a value
-        if ( $_POST["ring_code_letters"] != '-' ) {
+        if ($_POST["ring_code_letters"] != '-') {
             $ring_code_letters = $_POST["ring_code_letters"];
 
             // Query
             $query = $wpdb->prepare(
-                "SELECT * FROM {$table_name} WHERE rongakood_tahed = %s OR rongakood_numbrid LIKE %s",
-                $ring_code_letters,
-                "%{$_POST['ring_code_number']}%"
+                "SELECT * FROM {$table_name} WHERE rongakood_tahed = %s",
+                $ring_code_letters
             );
             $results = $wpdb->get_results($query);
 

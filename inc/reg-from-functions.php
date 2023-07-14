@@ -70,10 +70,12 @@ function cc_user_form_err($field) {
             }
         }
 
-        // Check is user_name field filled
+        // Check if "pw" field is empty or less than 12 characters long
         if ( empty($_POST["pw"]) && $field == "pw" ) {
             echo "<span class='cc-form__mandatory'>Vajalik väli</span>";
-        } 
+        } elseif ( strlen($_POST["pw"]) < 12 && $field == "pw" ) {
+            echo "<span class='cc-form__mandatory'>Peab olema vähemalt 12 tähemärki pikk</span>";
+        }
     
     }
 }
@@ -86,7 +88,7 @@ function cc_create_new_user() {
     if ( $_SERVER["REQUEST_METHOD"] == "POST" ) {
 
         // Check are all the fields filled
-        if ( !empty($_POST["first_name"]) && !empty($_POST["last_name"]) && !empty($_POST["pw"]) ) {
+        if ( !empty($_POST["first_name"]) && !empty($_POST["last_name"]) ) {
             
             // Check if mail field is filled, is it correct or is it taken by other user
             if ( empty($_POST["mail"]) ) {
@@ -130,15 +132,21 @@ function cc_create_new_user() {
                 if (!$is_valid_date) return; 
             }
 
-            // Check if user_name field is filled
+            // Check if user_name field is filled 
             if ( empty($_POST["user_name"]) ) {
                 return;
             } elseif ( !empty($_POST["user_name"]) ) {
                 // Check if a user with the same username already exists
                 $username = $_POST["user_name"];
 
-                if (username_exists($username)) return;
-                  
+                if (username_exists($username)) return;   
+            }
+
+             // Check if "pw" field is empty or less than 12 characters long
+            if ( empty($_POST["pw"]) ) {
+                return;
+            } elseif ( strlen($_POST["pw"]) < 12 ) {
+                return;
             }
 
             // Include the WordPress core file
